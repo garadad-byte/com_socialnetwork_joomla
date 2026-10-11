@@ -3,30 +3,32 @@
 This repository contains a staged implementation of a Google+-inspired social network component for Joomla 5/6.
 
 ## Stage 1: Project skeleton
-The initial scaffold provides a working Joomla component foundation with:
-- component package manifest
-- admin dashboard and ACL
-- frontend feed/profile entry point
-- template shell
-- SQL install/uninstall migration files
-- core media assets
+- installable Joomla package scaffold
+- admin dashboard and ACL foundation
+- frontend feed and profile shell
+- SQL schema and migration foundation
 
-## Stage 2: Social graph foundation
-This stage added:
-- user profile model and view
-- circles CRUD
-- communities CRUD
-- follow relationship logic
-- AJAX-based follow action
-- responsive CSS
+## Stage 2: Social graph
+- profiles
+- circles
+- communities
+- relationship/follow logic
+- AJAX follow interaction
 
-## Stage 3: Post stream and interaction layer
-This stage adds the core social interaction functionality:
-- publishing posts with text and optional links
-- hashtag extraction and persistence
-- comments on posts
+## Stage 3: Live social stream
+- posts
+- optional links
+- hashtags
+- comments
 - +1 reactions
-- AJAX interactions without reload
-- feed template with composer, comments, and reaction actions
+- AJAX publishing and commenting
 
-This keeps the project in a consistent and installable state while adding real social media workflow behavior.
+## Stage 4: Communication and moderation
+- notifications
+- private messages
+- events and invitations
+- search
+- reports and blocks
+- moderation flows and lists
+
+This keeps the project in a coherent, installable state while extending the feature set toward a complete social network.
