@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" version="1.0.0" method="upgrade">
+	<name>Social Network Package</name>
+	<author>Copilot</author>
+	<creationDate>2026-10-11</creationDate>
+	<copyright>Copyright (C) 2026</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<packagename>socialnetwork</packagename>
+	<version>1.0.0</version>
+	<description>Google+-inspired social network package for Joomla 5/6.</description>
+	<files>
+		<file type="component" id="com_socialnetwork">administrator/components/com_socialnetwork/com_socialnetwork.xml</file>
+		<file type="template" id="tmpl_socialplus" client="site">templates/tmpl_socialplus/templateDetails.xml</file>
+	</files>
+</extension>

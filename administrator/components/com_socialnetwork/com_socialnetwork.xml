@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.0.0" method="upgrade">
+	<name>com_socialnetwork</name>
+	<element>com_socialnetwork</element>
+	<author>Copilot</author>
+	<creationDate>2026-10-11</creationDate>
+	<copyright>Copyright (C) 2026</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<version>1.0.0</version>
+	<description>COM_SOCIALNETWORK_XML_DESCRIPTION</description>
+	<namespace path="administrator/components/com_socialnetwork">SocialNetwork</namespace>
+	<administration>
+		<menu img="class:users" link="index.php?option=com_socialnetwork">Social Network</menu>
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<file>access.xml</file>
+			<file>config.xml</file>
+			<file>controller.php</file>
+			<file>helper.php</file>
+			<file>socialnetwork.php</file>
+		</files>
+	</administration>
+	<files folder="site">
+		<folder>controllers</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>layouts</folder>
+		<file>controller.php</file>
+		<file>router.php</file>
+		<file>socialnetwork.php</file>
+		<file>helper.php</file>
+	</files>
+	<media destination="com_socialnetwork" folder="media/com_socialnetwork">
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+		<folder>svg</folder>
+	</media>
+	<updateservers>
+		<server type="extension" name="Social Network Updates">https://example.invalid/socialnetwork-update.xml</server>
+	</updateservers>
+</extension>

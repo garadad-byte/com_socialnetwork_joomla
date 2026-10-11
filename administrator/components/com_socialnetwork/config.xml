@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="basic" label="COM_SOCIALNETWORK_BASIC_SETTINGS">
+			<field name="sitename" type="text" label="COM_SOCIALNETWORK_SITE_NAME" default="Social Network" size="40" />
+			<field name="enable_feed" type="radio" default="1" label="COM_SOCIALNETWORK_ENABLE_FEED" class="btn-group btn-group-yesno">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="enable_profiles" type="radio" default="1" label="COM_SOCIALNETWORK_ENABLE_PROFILES" class="btn-group btn-group-yesno">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>
