@@ -15,6 +15,9 @@ class SocialnetworkHelper
             ['link' => 'index.php?option=com_socialnetwork&view=events', 'label' => 'Events'],
             ['link' => 'index.php?option=com_socialnetwork&view=messages', 'label' => 'Messages'],
             ['link' => 'index.php?option=com_socialnetwork&view=notifications', 'label' => 'Notifications'],
+            ['link' => 'index.php?option=com_socialnetwork&view=privacy', 'label' => 'Privacy'],
+            ['link' => 'index.php?option=com_socialnetwork&view=invitations', 'label' => 'Invitations'],
+            ['link' => 'index.php?option=com_socialnetwork&view=media', 'label' => 'Media'],
             ['link' => 'index.php?option=com_socialnetwork&view=search', 'label' => 'Search'],
         ];
     }

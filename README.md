@@ -31,4 +31,12 @@ This repository contains a staged implementation of a Google+-inspired social ne
 - reports and blocks
 - moderation flows and lists
 
-This keeps the project in a coherent, installable state while extending the feature set toward a complete social network.
+## Stage 5: Privacy, invitations, media and link preview
+This stage adds:
+- privacy settings management
+- invitation workflows
+- media upload handling
+- link metadata preview for shared urls
+- navigation additions for privacy, invitations and media
+
+This keeps the project in a consistent, installable state while extending the feature set toward a complete social network.
