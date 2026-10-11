@@ -8,11 +8,11 @@ use Joomla\CMS\MVC\Controller\BaseController;
 
 class SocialnetworkController extends BaseController
 {
-	public function display($cachable = false, $urlparams = [])
-	{
-		$viewName = $this->input->getCmd('view', 'feed');
-		$this->input->set('view', $viewName);
+    public function display($cachable = false, $urlparams = [])
+    {
+        $view = $this->input->getCmd('view', 'feed');
+        $this->input->set('view', $view);
 
-		return parent::display($cachable, $urlparams);
-	}
+        return parent::display($cachable, $urlparams);
+    }
 }

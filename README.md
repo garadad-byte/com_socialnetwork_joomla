@@ -1,42 +1,29 @@
 # Social Network for Joomla 5/6
 
-This repository contains a staged implementation of a Google+-inspired social network component for Joomla 5/6.
+This repository contains a staged implementation of a Google+-inspired social network for Joomla 5/6.
 
-## Stage 1: Project skeleton and installable base
+## Stage 1 completed
 
-This first stage establishes:
+The project now includes a working scaffolding with:
 
-- Joomla component scaffold: `com_socialnetwork`
-- Admin dashboard and ACL
-- Frontend component entry points and feed/profile views
-- Template skeleton
-- SQL install/uninstall migration files
-- Media assets
-- Joomla package manifest for installable packaging
+- component package manifest
+- admin dashboard and core ACL structure
+- site feed/profile entry point
+- frontend template skeleton
+- SQL schema for profiles, circles, communities, posts, comments, reactions, notifications, messages, events, privacy, reports, moderation and media
+- uninstall script
+- languages
+- AJAX follow endpoint for social relationships
 
-## Architecture
+## Stage 2 expansion
 
-- Component: `administrator/components/com_socialnetwork`
-- Site: `components/com_socialnetwork`
-- Assets: `media/com_socialnetwork`
-- Template: `templates/tmpl_socialplus`
-- Package manifest: `pkg_socialnetwork.xml`
+This implementation adds the next production layer:
 
-## Planned domain modules
+- user profile model and view
+- circles CRUD endpoints
+- communities CRUD endpoints
+- relationship/follow logic using Joomla User API
+- feed display and profile page
+- adaptive CSS and AJAX interaction logic
 
-- Profiles
-- Circles
-- Communities
-- Posts, media, links, hashtags
-- Comments and reactions
-- Notifications
-- Messages
-- Events
-- Privacy settings and blocks
-- Moderation and reports
-- Search and invitations
-- Hangouts / P2P signaling skeleton
-
-## Notes
-
-This repository intentionally begins as a working, installable scaffold rather than a mockup. The implementation is modular and designed to be extended in subsequent stages without breaking the base architecture.
+These changes keep the project in a coherent, installable state while adding the core social graph and user interaction layer.

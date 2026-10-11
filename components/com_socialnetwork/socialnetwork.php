@@ -4,10 +4,16 @@ declare(strict_types=1);
 defined('_JEXEC') or die;
 
 use Joomla\CMS\Factory;
-use Joomla\CMS\Language\Text;
+use Joomla\CMS\MVC\Controller\BaseController;
 
 $app = Factory::getApplication();
 $input = $app->input;
-$view = $input->getCmd('view', 'feed');
+$viewName = $input->getCmd('view', 'feed');
 
-require_once __DIR__ . '/views/' . $view . '/view.html.php';
+if (empty($viewName)) {
+    $viewName = 'feed';
+}
+
+$controller = BaseController::getInstance('Socialnetwork');
+$controller->execute($input->getCmd('task', 'display'));
+$controller->redirect();

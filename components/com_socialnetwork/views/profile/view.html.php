@@ -3,13 +3,14 @@ declare(strict_types=1);
 
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Language\Text;
-
-class SocialnetworkViewProfile extends Joomla\CMS\MVC\View\HtmlView
+class SocialnetworkViewProfile extends JViewLegacy
 {
-	public function display($tpl = null)
-	{
-		$this->title = Text::_('COM_SOCIALNETWORK_PROFILE');
-		parent::display($tpl);
-	}
+    public function display($tpl = null)
+    {
+        $model = $this->getModel();
+        $this->profile = $model->getProfile();
+        $this->relationships = $model->getRelationships();
+
+        parent::display($tpl);
+    }
 }
